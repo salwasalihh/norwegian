@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="no">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Norsk A1 – Basic Norwegian with Audio</title>
+
+  <style>
+    :root { --max: 1000px; --pad: 16px; --r: 14px; }
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      background: #f6f7fb;
+      color: #111;
+      line-height: 1.5;
+    }
+
+    .container {
+      max-width: var(--max);
+      margin: auto;
+      padding: var(--pad);
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      background: #fff;
+      border-bottom: 1px solid #e7e7ef;
+      z-index: 10;
+    }
+
+    .top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 10px;
+      padding: 12px 0;
+    }
+
+    .brand { font-weight: 800; }
+
+    nav {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #111;
+      padding: 6px 10px;
+      border-radius: 8px;
+    }
+    nav a:hover { background: #f0f1f7; }
+
+    .section {
+      background: #fff;
+      border: 1px solid #e7e7ef;
+      border-radius: var(--r);
+      padding: 16px;
+      margin-top: 16px;
+    }
+
+    h1 { margin: 0 0 6px; }
+    h2 { margin: 0 0 12px; font-size: 18px; }
+
+    .row {
+      display: grid;
+      grid-template-columns: auto 1fr 1fr;
+      gap: 12px;
+      align-items: center;
+      padding: 10px 0;
+      border-bottom: 1px dashed #e7e7ef;
+    }
+    .row:last-child { border-bottom: none; }
+
+    .speak {
+      width: 40px;
+      height: 36px;
+      border-radius: 10px;
+      border: 1px solid #d8d9e6;
+      background: #fff;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    .speak:hover { background: #f0f1f7; }
+
+    .no { font-weight: 600; }
+    .en { color: #444; }
+
+    .hint {
+      font-size: 14px;
+      color: #444;
+      margin: 0;
+    }
+
+    @media (max-width: 700px) {
+      .row { grid-template-columns: auto 1fr; }
+      .en { grid-column: 2 / 3; font-style: italic; }
+    }
+  </style>
+</head>
+
+<body>
+<header>
+  <div class="container">
+    <div class="top">
+      <div class="brand">Norsk A1 🔊</div>
+      <nav>
+        <a href="#hilsener">Greetings</a>
+        <a href="#fraser">Phrases</a>
+        <a href="#person">Personal</a>
+        <a href="#butikk">Shop</a>
+        <a href="#transport">Transport</a>
+        <a href="#folelser">Feelings</a>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<main class="container">
+  <section class="section">
+    <h1>Basic Norwegian (A1)</h1>
+    <p class="hint">Klikk 🔊 for å høre norsk uttale. Best i Chrome / Edge.</p>
+  </section>
+
+  <!-- HILSENER -->
+  <section class="section" id="hilsener">
+    <h2>Hilsener / Greetings</h2>
+    <div class="row"><button class="speak" data-say="Hei">🔊</button><div class="no">Hei</div><div class="en">Hello</div></div>
+    <div class="row"><button class="speak" data-say="God morgen">🔊</button><div class="no">God morgen</div><div class="en">Good morning</div></div>
+    <div class="row"><button class="speak" data-say="God kveld">🔊</button><div class="no">God kveld</div><div class="en">Good evening</div></div>
+    <div class="row"><button class="speak" data-say="Ha det">🔊</button><div class="no">Ha det</div><div class="en">Goodbye</div></div>
+    <div class="row"><button class="speak" data-say="Takk">🔊</button><div class="no">Takk</div><div class="en">Thank you</div></div>
+    <div class="row"><button class="speak" data-say="Unnskyld">🔊</button><div class="no">Unnskyld</div><div class="en">Sorry / Excuse me</div></div>
+  </section>
+
+  <!-- FRASER -->
+  <section class="section" id="fraser">
+    <h2>Viktige fraser / Useful phrases</h2>
+    <div class="row"><button class="speak" data-say="Hva heter du?">🔊</button><div class="no">Hva heter du?</div><div class="en">What is your name?</div></div>
+    <div class="row"><button class="speak" data-say="Jeg heter ...">🔊</button><div class="no">Jeg heter …</div><div class="en">My name is …</div></div>
+    <div class="row"><button class="speak" data-say="Hvordan går det?">🔊</button><div class="no">Hvordan går det?</div><div class="en">How are you?</div></div>
+    <div class="row"><button class="speak" data-say="Jeg forstår ikke">🔊</button><div class="no">Jeg forstår ikke</div><div class="en">I don’t understand</div></div>
+    <div class="row"><button class="speak" data-say="Kan du snakke sakte?">🔊</button><div class="no">Kan du snakke sakte?</div><div class="en">Can you speak slowly?</div></div>
+  </section>
+
+  <!-- PERSON -->
+  <section class="section" id="person">
+    <h2>Personlig informasjon / Personal</h2>
+    <div class="row"><button class="speak" data-say="Hvor er du fra?">🔊</button><div class="no">Hvor er du fra?</div><div class="en">Where are you from?</div></div>
+    <div class="row"><button class="speak" data-say="Jeg er fra Norge">🔊</button><div class="no">Jeg er fra Norge</div><div class="en">I am from Norway</div></div>
+    <div class="row"><button class="speak" data-say="Jeg bor i Oslo">🔊</button><div class="no">Jeg bor i Oslo</div><div class="en">I live in Oslo</div></div>
+    <div class="row"><button class="speak" data-say="Jeg har barn">🔊</button><div class="no">Jeg har barn</div><div class="en">I have children</div></div>
+  </section>
+
+  <!-- BUTIKK -->
+  <section class="section" id="butikk">
+    <h2>Butikk / Café</h2>
+    <div class="row"><button class="speak" data-say="Jeg vil ha kaffe">🔊</button><div class="no">Jeg vil ha kaffe</div><div class="en">I would like coffee</div></div>
+    <div class="row"><button class="speak" data-say="Hvor mye koster det?">🔊</button><div class="no">Hvor mye koster det?</div><div class="en">How much does it cost?</div></div>
+    <div class="row"><button class="speak" data-say="Det er dyrt">🔊</button><div class="no">Det er dyrt</div><div class="en">It is expensive</div></div>
+    <div class="row"><button class="speak" data-say="Det er billig">🔊</button><div class="no">Det er billig</div><div class="en">It is cheap</div></div>
+  </section>
+
+  <!-- TRANSPORT -->
+  <section class="section" id="transport">
+    <h2>Transport / Directions</h2>
+    <div class="row"><button class="speak" data-say="Hvor er bussholdeplassen?">🔊</button><div class="no">Hvor er bussholdeplassen?</div><div class="en">Where is the bus stop?</div></div>
+    <div class="row"><button class="speak" data-say="Til høyre">🔊</button><div class="no">Til høyre</div><div class="en">To the right</div></div>
+    <div class="row"><button class="speak" data-say="Til venstre">🔊</button><div class="no">Til venstre</div><div class="en">To the left</div></div>
+    <div class="row"><button class="speak" data-say="Rett fram">🔊</button><div class="no">Rett fram</div><div class="en">Straight ahead</div></div>
+  </section>
+
+  <!-- FØLELSER -->
+  <section class="section" id="folelser">
+    <h2>Følelser / Feelings</h2>
+    <div class="row"><button class="speak" data-say="Jeg er glad">🔊</button><div class="no">Jeg er glad</div><div class="en">I am happy</div></div>
+    <div class="row"><button class="speak" data-say="Jeg er trøtt">🔊</button><div class="no">Jeg er trøtt</div><div class="en">I am tired</div></div>
+    <div class="row"><button class="speak" data-say="Jeg er syk">🔊</button><div class="no">Jeg er syk</div><div class="en">I am sick</div></div>
+    <div class="row"><button class="speak" data-say="Jeg trenger hjelp">🔊</button><div class="no">Jeg trenger hjelp</div><div class="en">I need help</div></div>
+  </section>
+</main>
+
+<script>
+  const synth = window.speechSynthesis;
+
+  function pickNorwegianVoice(voices) {
+    return voices.find(v => /nb-NO|no-NO/i.test(v.lang)) ||
+           voices.find(v => /norwegian/i.test(v.name)) ||
+           null;
+  }
+
+  function speak(text) {
+    if (!("speechSynthesis" in window)) return;
+    synth.cancel();
+    const u = new SpeechSynthesisUtterance(text);
+    const voice = pickNorwegianVoice(synth.getVoices());
+    if (voice) u.voice = voice;
+    u.lang = voice?.lang || "nb-NO";
+    u.rate = 0.95;
+    synth.speak(u);
+  }
+
+  document.querySelectorAll(".speak").forEach(btn => {
+    btn.onclick = () => speak(btn.dataset.say);
+  });
+</script>
+</body>
+</html>
